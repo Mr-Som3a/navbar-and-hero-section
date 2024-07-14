@@ -1,0 +1,80 @@
+body{
+    font-family: "Epilogue", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+nav{
+    .nav-center{
+        padding: 1rem 1.3rem;
+        .nav-header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            button{
+                border: none;
+                background-color: transparent;
+                width:2.5rem;
+                height:2.5rem;
+                border-radius: .5rem;
+            }
+            .menu{
+                background-color: blueviolet;
+                width: 60%;
+                height: 100dvh;
+                ul{
+                    list-style: none;
+                }
+
+            }
+        }
+    }
+}
+
+main{
+    .hero{
+        text-align: center;
+        .image{
+            img{
+                width: 100%;
+            }
+        }
+        .wlcText{
+            width: 90%;
+            margin: 0 auto;
+            h1{
+                font-size: 2.7rem;
+                font-weight: 700;
+            }
+            p{
+                font-size: 1.2rem;
+                font-weight: 500;
+                color:hsl(0, 0%, 41%)
+            }
+            button{
+                display: block;
+                margin-inline: auto;
+                width: 10rem;
+                height: 3rem;
+                background-color: black;
+                color: white;
+                font-weight: 500;
+                font-size: 1.2rem;
+                border: none;
+                border-radius: 1rem;
+                transition: all ease .3s;
+                &:hover{
+                    background-color: transparent;
+                    border:3px solid black;
+                    color: black
+                }
+            }
+            .pictures{
+                margin: 3rem 0;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+        }
+    }
+}
