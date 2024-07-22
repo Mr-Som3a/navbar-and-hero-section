@@ -21,7 +21,7 @@
       <!-- nav header -->
       <div class="nav-header">
         <img src="./images/logo.svg" class="logo" alt="logo"/>
-        <button class="nav-toggle">
+        <button id="navToggle" class="nav-toggle">
           <img src="./images/icon-menu.svg" alt="menu">
         </button>
         <!-- links -->
@@ -48,20 +48,54 @@
           </ul>
         </div>
       </div>
-      <!-- mobile link -->
+      <!-- mobile links -->
+      <div id="containerMenu" class="container-menu">
+        <div class="mobile-menu">
+          <button id="closeToggle" class="close-toggle">
+            <img src="./images/icon-close-menu.svg" alt="close menu">
+          </button>
+          <ul class="primary links">
+            <li>
+              feature
+              <div id="details">
+                <ul>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              company
+            </li>
+            <li>
+              careers
+            </li>
+            <li>
+              about
+            </li>
+          </ul>
+          <ul class="secondary links">
+            <li>
+              <a>log in</a>
+            </li>
+            <li class="register-btn">register</li>
+          </ul>
+        </div>
+      </div>
       
     </div>
   </nav>
   <main>
     <section class="hero">
       <div class="image">
-        <img src="./images/image-hero-mobile.png" alt="hero image">
       </div>
       <div class="wlcText">
         <h1>Make remote work</h1>
         <p>Get your team in sync, no matter your location. Streamline processes, 
           create team rituals, and watch productivity soar.</p>
-        <button>Learn more</button>
+        <button id="learnMore" class="wel-btn">Learn more</button>
         <div class="pictures">
           <img src="./images/client-databiz.svg" alt="">
           <img src="./images/client-audiophile.svg" alt="">

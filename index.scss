@@ -10,7 +10,7 @@
 nav{
     .nav-center{        
         padding: 1rem 1.3rem;
-        
+        position: relative;
         .nav-header{
             display: flex;
             justify-content: space-between;
@@ -39,9 +39,8 @@ nav{
                         align-items: center;
                     }
                     .register-btn{
-                        border: solid 1px black;
-                        border-radius: .7rem;
-                        width: 7rem;
+                        border: solid .1rem black;
+                        border-radius: 1.2rem;
                         transition: all ease .3s;
                         &:hover{
                             border-color: none;
@@ -49,19 +48,93 @@ nav{
                             color: white;
                         }
                     }
+                    
                 }
             }
         }
+        .container-menu{
+            display: none;
+            background-color: rgba(0, 0, 0, 0.4);
+            position: fixed;
+            z-index: 10;
+            right: 0;
+            top: 0;
+            width: 100%;
+            height: 100dvh;
+            .mobile-menu{
+                background-color: white;
+                position: fixed;
+                right: 0;
+                width: 65%;
+                height: 100dvh;
+                padding:2rem;
+                display: flex;
+                flex-direction: column;
+                font-size: 1.5rem;
+                }
+                .close-toggle{
+                    width: 2.5rem;
+                    height: 2.5rem;
+                    align-self: flex-end;
+                    margin-bottom: 3rem;
+                    border: none;
+                    img{
+                        width: 100%;
+                        background-color: white;
+                    }
+                }
+                .primary{
+                    margin-bottom: 3rem;
+                    li{
+                        height: 3rem;
+                    }
+                }
+                .secondary{
+                    align-self: center;
+                    width: 100%;
+                    li{
+                        height: 2rem;
+                        margin-block: 1rem;
+                        text-align: center;
+                    }
+                    .register-btn{
+                        height: 3.5rem;
+                        padding: 1rem 3rem;
+                        margin: auto;
+                        width: 70%;
+                        border: solid 1px black;
+                        border-radius: 1rem;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        transition: all .3s ease;
+                        &:hover{
+                            background-color: black;
+                            color:white
+                        }
+                    }
+                }
+            }
+            .active{
+                display: block;
+                
+            }
+            transition: all .3s ease;
+        }
+        
     }
-}
+
 
 main{
     .hero{
         text-align: center;
         .image{
-            img{
-                width: 100%;
-            }
+            width: 100%;
+            height: 40dvh;
+            margin-bottom:3rem ;   
+            background: no-repeat url('images/image-hero-mobile.png');
+            background-size: contain;
+            background-position: center;
         }
         .wlcText{
             width: 90%;
@@ -73,23 +146,24 @@ main{
             p{
                 font-size: 1.2rem;
                 font-weight: 500;
+                margin-block: 2rem;
                 color:hsl(0, 0%, 41%)
             }
-            button{
+            .wel-btn{
                 display: block;
-                margin-inline: auto;
+                margin: 0 auto;
                 width: 10rem;
                 height: 3rem;
                 background-color: black;
                 color: white;
-                font-weight: 500;
-                font-size: 1.2rem;
+                font-weight: 400;
+                font-size: 1rem;
                 border: none;
                 border-radius: 1rem;
                 transition: all ease .3s;
                 &:hover{
                     background-color: transparent;
-                    border:3px solid black;
+                    border:1px solid black;
                     color: black
                 }
             }
@@ -102,7 +176,7 @@ main{
         }
     }
 }
-@media (min-width:660px) {
+@media (min-width:720px) {
     nav{
         .nav-center{
             .nav-header{
