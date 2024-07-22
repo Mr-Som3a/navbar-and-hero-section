@@ -22,8 +22,8 @@ nav .nav-center .nav-header {
 nav .nav-center .nav-header .nav-toggle {
   border: none;
   background-color: transparent;
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 2rem;
+  height: 2rem;
   border-radius: 0.5rem;
 }
 nav .nav-center .nav-header .menu {
@@ -72,11 +72,10 @@ nav .nav-center .container-menu .mobile-menu {
   padding: 2rem;
   display: flex;
   flex-direction: column;
-  font-size: 1.5rem;
 }
 nav .nav-center .container-menu .close-toggle {
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
   align-self: flex-end;
   margin-bottom: 3rem;
   border: none;
@@ -88,14 +87,41 @@ nav .nav-center .container-menu .close-toggle img {
 nav .nav-center .container-menu .primary {
   margin-bottom: 3rem;
 }
-nav .nav-center .container-menu .primary li {
-  height: 3rem;
+nav .nav-center .container-menu .primary .item {
+  margin-block: 1rem;
+}
+nav .nav-center .container-menu .primary .item .arrow {
+  display: inline-block;
+  position: relative;
+  top: 4px;
+  width: 1rem;
+  height: 1rem;
+}
+nav .nav-center .container-menu .primary .item .down {
+  background: no-repeat center url("/images/icon-arrow-down.svg");
+}
+nav .nav-center .container-menu .primary .item .up {
+  background: no-repeat center url("/images/icon-arrow-up.svg");
+}
+nav .nav-center .container-menu .primary .item .details {
+  display: none;
+  padding-left: 0.5rem;
+}
+nav .nav-center .container-menu .primary .item .details li {
+  margin: 1rem;
+}
+nav .nav-center .container-menu .primary .item .details li img {
+  margin-right: 5px;
+}
+nav .nav-center .container-menu .primary .item .active {
+  display: block;
+  transition: all 0.2s ease;
 }
 nav .nav-center .container-menu .secondary {
   align-self: center;
   width: 100%;
 }
-nav .nav-center .container-menu .secondary li {
+nav .nav-center .container-menu .secondary .item {
   height: 2rem;
   margin-block: 1rem;
   text-align: center;
