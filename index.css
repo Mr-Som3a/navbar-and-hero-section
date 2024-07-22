@@ -17,7 +17,6 @@ nav .nav-center .nav-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 1.2rem;
 }
 nav .nav-center .nav-header .nav-toggle {
   border: none;
@@ -28,6 +27,7 @@ nav .nav-center .nav-header .nav-toggle {
 }
 nav .nav-center .nav-header .menu {
   display: none;
+  font-size: 0.9rem;
   width: 100%;
 }
 nav .nav-center .nav-header .menu .links {
@@ -35,16 +35,62 @@ nav .nav-center .nav-header .menu .links {
   align-items: center;
   padding-left: 1rem;
 }
-nav .nav-center .nav-header .menu .links li {
+nav .nav-center .nav-header .menu .links .item {
   cursor: pointer;
   margin-right: 1rem;
   height: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+}
+nav .nav-center .nav-header .menu .links .item li {
+  margin: 1rem 0;
+}
+nav .nav-center .nav-header .menu .links .item li img {
+  margin-right: 5px;
+}
+nav .nav-center .nav-header .menu .links .item .f-details {
+  display: none;
+  position: absolute;
+  top: 35px;
+  right: 0;
+  padding: 0.8rem 1rem;
+  width: 8rem;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: -10px 10px 50px rgba(0, 0, 0, 0.212);
+}
+nav .nav-center .nav-header .menu .links .item .c-details {
+  display: none;
+  position: absolute;
+  top: 35px;
+  left: 0;
+  padding: 0.8rem 1rem;
+  width: 6rem;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: -10px 10px 50px rgba(0, 0, 0, 0.212);
+}
+nav .nav-center .nav-header .menu .links .item .active {
+  display: block;
+  transition: all 0.2s ease;
+}
+nav .nav-center .nav-header .menu .links .item .arrow {
+  display: inline-block;
+  position: relative;
+  width: 1rem;
+  height: 1rem;
+}
+nav .nav-center .nav-header .menu .links .item .down {
+  background: no-repeat center url("/images/icon-arrow-down.svg");
+}
+nav .nav-center .nav-header .menu .links .item .up {
+  background: no-repeat center url("/images/icon-arrow-up.svg");
 }
 nav .nav-center .nav-header .menu .links .register-btn {
   border: solid 0.1rem black;
+  padding: 1rem 1.5rem;
   border-radius: 1.2rem;
   transition: all ease 0.3s;
 }
@@ -74,6 +120,7 @@ nav .nav-center .container-menu .mobile-menu {
   flex-direction: column;
 }
 nav .nav-center .container-menu .close-toggle {
+  cursor: pointer;
   width: 1.5rem;
   height: 1.5rem;
   align-self: flex-end;
@@ -88,6 +135,7 @@ nav .nav-center .container-menu .primary {
   margin-bottom: 3rem;
 }
 nav .nav-center .container-menu .primary .item {
+  cursor: pointer;
   margin-block: 1rem;
 }
 nav .nav-center .container-menu .primary .item .arrow {
@@ -199,6 +247,7 @@ main .hero .wlcText .pictures {
 @media (min-width: 720px) {
   nav .nav-center .nav-header {
     justify-content: flex-start;
+    padding-inline: 2rem;
   }
   nav .nav-center .nav-header .menu {
     display: flex;
@@ -207,5 +256,44 @@ main .hero .wlcText .pictures {
   }
   nav .nav-center .nav-header .nav-toggle {
     display: none;
+  }
+  main .hero {
+    text-align: start;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  main .hero .image {
+    background: no-repeat url("images/image-hero-desktop.png");
+    background-size: contain;
+    background-position: top left;
+    margin: 0;
+    height: 70dvh;
+    width: 40%;
+  }
+  main .hero .wlcText {
+    width: 60%;
+    padding: 5rem 1rem 0 6rem;
+  }
+  main .hero .wlcText h1 {
+    font-size: 4rem;
+    font-weight: 700;
+  }
+  main .hero .wlcText h1 span {
+    display: block;
+  }
+  main .hero .wlcText p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-block: 2rem;
+    padding-right: 10%;
+    color: hsl(0, 0%, 41%);
+  }
+  main .hero .wlcText .wel-btn {
+    margin: 0;
+  }
+  main .hero .wlcText .pictures {
+    margin-top: 5rem;
+    padding-right: 10rem;
   }
 }/*# sourceMappingURL=index.css.map */
