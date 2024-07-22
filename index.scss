@@ -15,7 +15,6 @@ nav{
             display: flex;
             justify-content: space-between;
             align-items: center;
-            font-size: 1.2rem;
             .nav-toggle{
                 border: none;
                 background-color: transparent;
@@ -25,21 +24,68 @@ nav{
             }
             .menu{
                 display: none;
+                font-size: .9rem;
                 width: 100%;
                 .links{
                     display: flex;
                     align-items: center;
                     padding-left: 1rem;
-                    li{
+                    .item{
                         cursor: pointer;
                         margin-right: 1rem;
                         height: 2rem;
                         display: flex;
                         justify-content: center;
                         align-items: center;
+                        position: relative;
+                        li{
+                            margin: 1rem 0;
+                            img{
+                                margin-right: 5px;
+                            }
+                        }
+                        .f-details{
+                            display: none;
+                            position: absolute;
+                            top: 35px;
+                            right: 0;
+                            padding:.8rem 1rem;
+                            width: 8rem;
+                            border-radius: 10px;
+                            background-color: white;
+                            box-shadow: -10px 10px 50px rgba(0, 0, 0, 0.212);
+                        }
+                        .c-details{
+                            display: none;
+                            position: absolute;
+                            top: 35px;
+                            left: 0;
+                            padding:.8rem 1rem;
+                            width: 6rem;
+                            border-radius: 10px;
+                            background-color: white;
+                            box-shadow: -10px 10px 50px rgba(0, 0, 0, 0.212);
+                        }
+                        .active{
+                            display: block;
+                            transition: all .2s ease;
+                        }
+                        .arrow {
+                            display: inline-block;
+                            position: relative;
+                            width: 1rem;
+                            height: 1rem;
+                        }
+                        .down{
+                            background:no-repeat center url('/images/icon-arrow-down.svg');
+                        }
+                        .up{
+                            background:no-repeat center url('/images/icon-arrow-up.svg');
+                        }
                     }
                     .register-btn{
                         border: solid .1rem black;
+                        padding:1rem 1.5rem;
                         border-radius: 1.2rem;
                         transition: all ease .3s;
                         &:hover{
@@ -72,6 +118,7 @@ nav{
                 flex-direction: column;
                 }
                 .close-toggle{
+                    cursor: pointer;
                     width: 1.5rem;
                     height: 1.5rem;
                     align-self: flex-end;
@@ -85,6 +132,7 @@ nav{
                 .primary{
                     margin-bottom: 3rem;
                     .item{
+                        cursor: pointer;
                         margin-block: 1rem;
                         .arrow {
                             display: inline-block;
@@ -207,6 +255,7 @@ main{
         .nav-center{
             .nav-header{
                 justify-content: flex-start;
+                padding-inline: 2rem;
                 .menu{
                     display: flex;
                     align-items: center;
@@ -216,6 +265,48 @@ main{
                     display: none;
                 }
             } 
+        }
+    }
+    main{
+        .hero{
+            text-align: start;
+            margin-top: 2rem;
+            display: flex;
+            flex-direction: row-reverse;
+            .image{
+                background: no-repeat url('images/image-hero-desktop.png');
+                background-size: contain;
+                background-position: top left;
+                margin: 0;
+                height: 70dvh;
+                width: 40%;
+            }
+            .wlcText{
+                width: 60%;
+                padding: 5rem 1rem 0 6rem;
+
+                h1{
+                    font-size: 4rem;
+                    font-weight: 700;
+                    span{
+                        display: block;
+                    }
+                }
+                p{
+                    font-size: 1.2rem;
+                    font-weight: 500;
+                    margin-block: 2rem;
+                    padding-right: 10%;
+                    color:hsl(0, 0%, 41%)
+                }
+                .wel-btn{
+                margin: 0;
+                }
+                .pictures{
+                    margin-top: 5rem;
+                    padding-right: 10rem;
+                }
+            }
         }
     }
 }

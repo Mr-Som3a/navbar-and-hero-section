@@ -24,24 +24,39 @@
         <button id="navToggle" class="nav-toggle">
           <img src="./images/icon-menu.svg" alt="menu">
         </button>
-        <!-- links -->
-        <div class="menu active">
+        <!-- desktop links -->
+        <div class="menu">
           <ul class="primary links">
-            <li>
-              feature
+            <li id="feature" class="item">
+              feature <div id="f-icon" class="arrow down"></div>
+              <div id="details" class="f-details">
+                <ul>
+                  <li><img src="/images/icon-todo.svg" alt="">Todo List</li>
+                  <li><img src="/images/icon-calendar.svg" alt="">Calendar</li>
+                  <li><img src="/images/icon-reminders.svg" alt="">Reminders</li>
+                  <li><img src="/images/icon-planning.svg" alt="">Planning</li>
+                </ul>
+              </div>
             </li>
-            <li>
-              company
+            <li id="company"  class="item">
+              company <div id="c-icon" class="arrow down"></div>
+              <div class="c-details">
+                <ul>
+                  <li>History</li>
+                  <li>OurTeam</li>
+                  <li>Blog</li>
+                </ul>
+              </div>
             </li>
-            <li>
+            <li class="item">
               careers
             </li>
-            <li>
+            <li class="item">
               about
             </li>
           </ul>
           <ul class="secondary links">
-            <li>
+            <li class="item">
               <a>log in</a>
             </li>
             <li class="register-btn">register</li>
@@ -49,7 +64,7 @@
         </div>
       </div>
       <!-- mobile links -->
-      <div id="containerMenu" class="container-menu active">
+      <div id="containerMenu" class="container-menu">
         <div class="mobile-menu">
           <button id="closeToggle" class="close-toggle">
             <img src="./images/icon-close-menu.svg" alt="close menu">
@@ -99,7 +114,7 @@
       <div class="image">
       </div>
       <div class="wlcText">
-        <h1>Make remote work</h1>
+        <h1>Make <span>remote work</span></h1>
         <p>Get your team in sync, no matter your location. Streamline processes, 
           create team rituals, and watch productivity soar.</p>
         <button id="learnMore" class="wel-btn">Learn more</button>

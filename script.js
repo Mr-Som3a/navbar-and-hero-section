@@ -5,7 +5,6 @@ const closeToggle = document.getElementById('closeToggle');
 const featureDetails = document.getElementById('feature')
 const companyDetails = document.getElementById('company')
 
-const details = document.getElementById('details')
 const f_icon = document.getElementById('f-icon')
 const c_icon = document.getElementById('c-icon')
 
@@ -20,7 +19,7 @@ navToggle.onclick =()=>{
 }
 
 featureDetails.onclick =(e)=>{
-    
+    console.log('init')
     const det = e.target.children[1]
     if(det.className.includes('active')){
         det.classList.remove('active')
