@@ -3,8 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="stylesheet" href="/dist/index.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="scss/index.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
@@ -20,9 +19,9 @@
     <div class="nav-center">
       <!-- nav header -->
       <div class="nav-header">
-        <img src="./images/logo.svg" class="logo" alt="logo"/>
+        <img src="images/logo.svg" class="logo" alt="logo"/>
         <button id="navToggle" class="nav-toggle">
-          <img src="./images/icon-menu.svg" alt="menu">
+          <img src="images/icon-menu.svg" alt="menu">
         </button>
         <!-- desktop links -->
         <div class="menu">
@@ -31,14 +30,14 @@
               feature <div id="f-icon" class="arrow down"></div>
               <div id="details" class="f-details">
                 <ul>
-                  <li><img src="/images/icon-todo.svg" alt="">Todo List</li>
-                  <li><img src="/images/icon-calendar.svg" alt="">Calendar</li>
-                  <li><img src="/images/icon-reminders.svg" alt="">Reminders</li>
-                  <li><img src="/images/icon-planning.svg" alt="">Planning</li>
+                  <li><img src="images/icon-todo.svg" alt="">Todo List</li>
+                  <li><img src="images/icon-calendar.svg" alt="">Calendar</li>
+                  <li><img src="images/icon-reminders.svg" alt="">Reminders</li>
+                  <li><img src="images/icon-planning.svg" alt="">Planning</li>
                 </ul>
               </div>
             </li>
-            <li id="company"  class="item">
+            <li name="company" id="company"  class="item">
               company <div id="c-icon" class="arrow down"></div>
               <div class="c-details">
                 <ul>
@@ -67,21 +66,21 @@
       <div id="containerMenu" class="container-menu">
         <div class="mobile-menu">
           <button id="closeToggle" class="close-toggle">
-            <img src="./images/icon-close-menu.svg" alt="close menu">
+            <img src="images/icon-close-menu.svg" alt="close menu">
           </button>
           <ul class="primary links">
-            <li id="feature" class="item">
+            <li id="mFeature" class="item">
               feature <div id="f-icon" class="arrow down"></div>
               <div id="details" class="details">
                 <ul>
-                  <li><img src="/images/icon-todo.svg" alt="">Todo List</li>
-                  <li><img src="/images/icon-calendar.svg" alt="">Calendar</li>
-                  <li><img src="/images/icon-reminders.svg" alt="">Reminders</li>
-                  <li><img src="/images/icon-planning.svg" alt="">Planning</li>
+                  <li><img src="images/icon-todo.svg" alt="">Todo List</li>
+                  <li><img src="images/icon-calendar.svg" alt="">Calendar</li>
+                  <li><img src="images/icon-reminders.svg" alt="">Reminders</li>
+                  <li><img src="images/icon-planning.svg" alt="">Planning</li>
                 </ul>
               </div>
             </li>
-            <li id="company"  class="item">
+            <li id="mCompany"  class="item">
               company <div id="c-icon" class="arrow down"></div>
               <div class="details">
                 <ul>
@@ -119,15 +118,15 @@
           create team rituals, and watch productivity soar.</p>
         <button id="learnMore" class="wel-btn">Learn more</button>
         <div class="pictures">
-          <img src="./images/client-databiz.svg" alt="">
-          <img src="./images/client-audiophile.svg" alt="">
-          <img src="./images/client-meet.svg" alt="">
-          <img src="./images/client-maker.svg" alt="">
+          <img src="images/client-databiz.svg" alt="">
+          <img src="images/client-audiophile.svg" alt="">
+          <img src="images/client-meet.svg" alt="">
+          <img src="images/client-maker.svg" alt="">
         </div>
       </div>
     </section>
   </main>
 
-<script src="/js/script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
