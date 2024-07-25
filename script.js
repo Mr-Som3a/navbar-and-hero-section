@@ -11,7 +11,7 @@ const f_icon = document.getElementById('f-icon')
 const c_icon = document.getElementById('c-icon')
 
 
-console.log(featureDetails)
+
 closeToggle.onclick= ()=>{
 menuContainer.classList.remove("active")
 }
