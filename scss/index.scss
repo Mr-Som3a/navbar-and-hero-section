@@ -77,10 +77,10 @@ nav{
                             height: 1rem;
                         }
                         .down{
-                            background:no-repeat center url('../images/icon-arrow-down.svg');
+                            background:no-repeat center url('../images/iconArrowDown.svg');
                         }
                         .up{
-                            background:no-repeat center url('../images/icon-arrow-up.svg');
+                            background:no-repeat center url('../images/iconArrowUp.svg');
                         }
                     }
                     .register-btn{
@@ -142,10 +142,10 @@ nav{
                             height: 1rem;
                         }
                         .down{
-                            background:no-repeat center url('../images/icon-arrow-down.svg');
+                            background:no-repeat center url('../images/iconArrowDown.svg');
                         }
                         .up{
-                            background:no-repeat center url('../images/icon-arrow-up.svg');
+                            background:no-repeat center url('../images/iconArrowUp.svg');
                         }
                         .details{
                             display: none;
@@ -274,7 +274,7 @@ main{
             display: flex;
             flex-direction: row-reverse;
             .image{
-                background: no-repeat url('../imageHeroDesktop.png');
+                background: no-repeat url('../images/imageHeroDesktop.png');
                 background-size: contain;
                 background-position: top left;
                 margin: 0;
