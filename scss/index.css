@@ -83,10 +83,10 @@ nav .nav-center .nav-header .menu .links .item .arrow {
   height: 1rem;
 }
 nav .nav-center .nav-header .menu .links .item .down {
-  background: no-repeat center url("./images/icon-arrow-down.svg");
+  background: no-repeat center url("../images/icon-arrow-down.svg");
 }
 nav .nav-center .nav-header .menu .links .item .up {
-  background: no-repeat center url("./images/icon-arrow-up.svg");
+  background: no-repeat center url("../images/icon-arrow-up.svg");
 }
 nav .nav-center .nav-header .menu .links .register-btn {
   border: solid 0.1rem black;
@@ -146,10 +146,10 @@ nav .nav-center .container-menu .primary .item .arrow {
   height: 1rem;
 }
 nav .nav-center .container-menu .primary .item .down {
-  background: no-repeat center url("./images/icon-arrow-down.svg");
+  background: no-repeat center url("../images/icon-arrow-down.svg");
 }
 nav .nav-center .container-menu .primary .item .up {
-  background: no-repeat center url("./images/icon-arrow-up.svg");
+  background: no-repeat center url("../images/icon-arrow-up.svg");
 }
 nav .nav-center .container-menu .primary .item .details {
   display: none;
@@ -264,7 +264,7 @@ main .hero .wlcText .pictures {
     flex-direction: row-reverse;
   }
   main .hero .image {
-    background: no-repeat url("/imageHeroDesktop.png");
+    background: no-repeat url("../imageHeroDesktop.png");
     background-size: contain;
     background-position: top left;
     margin: 0;
