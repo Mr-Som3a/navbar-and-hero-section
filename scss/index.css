@@ -264,7 +264,7 @@ main .hero .wlcText .pictures {
     flex-direction: row-reverse;
   }
   main .hero .image {
-    background: no-repeat url("/images/imageHeroDesktop.png");
+    background: no-repeat url("/imageHeroDesktop.png");
     background-size: contain;
     background-position: top left;
     margin: 0;
